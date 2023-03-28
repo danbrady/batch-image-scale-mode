@@ -1,0 +1,12 @@
+{
+  "name": "Batch Image Scale Mode",
+  "id": "1222186277267151256",
+  "api": "1.0.0",
+  "main": "code.js",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "editorType": [
+    "figma"
+  ],
+  "ui": "ui.html"
+}
