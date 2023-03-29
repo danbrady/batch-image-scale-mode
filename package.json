@@ -1,14 +1,18 @@
 {
   "name": "batch-image-scale-mode",
   "version": "0.0.1",
-  "description": "Batch Image Scale Mode",
+  "description": "Figma plugin to change the scale mode of many image rectangles at once.",
   "main": "code.js",
   "scripts": {
     "build": "webpack --mode production",
     "watch": "webpack --mode development --watch"
   },
-  "author": "",
-  "license": "",
+  "author": "Dan Brady",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danbrady/batch-image-scale-mode"
+  },
   "devDependencies": {
     "@effortlessmotion/html-webpack-inline-source-plugin": "^1.0.3",
     "@figma/plugin-typings": "*",
