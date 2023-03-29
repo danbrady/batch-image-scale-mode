@@ -1,0 +1,97 @@
+:root {
+  --font-stack: "Inter", sans-serif;
+  --transition-time: 200ms;
+}
+
+html {
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: var(--font-stack);
+  font-size: 0.875rem;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.4;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.status {
+  transition: opacity var(--transition-time);
+  opacity: 0;
+}
+
+.status.enter {
+  opacity: 0;
+}
+.status.enter-active,
+.status.enter-done {
+  opacity: 1;
+}
+.status.exit {
+  opacity: 1;
+}
+.status.exit-active,
+.status.exit-done {
+  opacity: 0;
+}
+
+.flex {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.flex-align-items-center {
+  align-items: center;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mb-3 {
+  margin-bottom: 1rem;
+}

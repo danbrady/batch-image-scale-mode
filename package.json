@@ -4,13 +4,28 @@
   "description": "Batch Image Scale Mode",
   "main": "code.js",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "watch": "npm run build -- --watch"
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch"
   },
   "author": "",
   "license": "",
   "devDependencies": {
+    "@effortlessmotion/html-webpack-inline-source-plugin": "^1.0.3",
     "@figma/plugin-typings": "*",
-    "typescript": "*"
+    "@types/node": "^18.15.10",
+    "@types/react": "^18.0.30",
+    "@types/react-dom": "^18.0.11",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.2",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.2",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-transition-group": "^4.4.5"
   }
 }

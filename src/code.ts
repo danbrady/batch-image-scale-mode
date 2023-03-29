@@ -1,8 +1,9 @@
 figma.showUI(__html__);
 
-figma.ui.resize(400, 128);
+figma.ui.resize(512, 96);
 
-function clone(val: any): any {
+// See: https://www.figma.com/plugin-docs/editing-properties
+const clone = (val: any): any => {
   const type = typeof val;
   if (val === null) {
     return null;
@@ -22,14 +23,14 @@ function clone(val: any): any {
     }
   }
   throw "unknown";
-}
+};
 
 figma.ui.onmessage = (pluginMessage) => {
   const selection = figma.currentPage.selection;
   let appliedCount = 0;
 
   selection.map((node) => {
-    if (node.type === "RECTANGLE") {
+    if (node.type === "RECTANGLE" && node.fills[0].type === "IMAGE") {
       const fills = clone(node.fills);
       fills.map((fill: any) => {
         fill.scaleMode = pluginMessage.scaleMode;
