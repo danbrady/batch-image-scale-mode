@@ -1,6 +1,6 @@
 {
   "name": "batch-image-scale-mode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Figma plugin to change the scale mode of many image rectangles at once.",
   "main": "code.js",
   "scripts": {
